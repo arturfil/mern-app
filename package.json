@@ -2,15 +2,29 @@
   "name": "udemy-mern",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "express-ejs-layouts": "^2.3.1",
+    "express-session": "^1.15.6",
+    "logger": "0.0.1",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.0",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0"
+    "passport-google-oauth": "^1.0.0",
+    "passport-google-oauth20": "^1.0.0",
+    "path": "^0.12.7",
+    "session": "^0.1.0"
   }
 }
