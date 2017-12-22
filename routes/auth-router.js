@@ -9,10 +9,15 @@ router.get(
     })
 )
 
-router.get('/auth/google/callback', passport.authenticate('google'));
+router.get('/auth/google/callback', passport.authenticate('google', {
+    successRedirect: '/success',
+    failureRedirect: '/',
+    failureFlash: true
+    })
+);
 
-router.get('/api/current-user', (req, res, next) => {
-    res.send(req.user);
+router.get('/success', (req, res, next) => {
+    res.send({text: 'login was succesful!'})
 })
 
 module.exports = router;
