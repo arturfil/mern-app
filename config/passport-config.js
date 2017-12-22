@@ -1,6 +1,7 @@
 const passport = require('passport');
 const UserModel = require('../models/user-model.js');
-const bcrypt = require('bcrypt');const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+const bcrypt = require('bcrypt');
+const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 
 passport.serializeUser((userFromDb, done) => {
